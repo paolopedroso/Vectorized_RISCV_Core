@@ -1,1 +1,1 @@
-# Vectorized_RISCV_Core
+# Vectorized RISCV Core
