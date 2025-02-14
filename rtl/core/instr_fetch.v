@@ -7,7 +7,7 @@
  */
 
 module instr_fetch #(
-parameter int DATA_WIDTH = 32
+    parameter int DATA_WIDTH = 32
 ) (
     input clk,
     input rst,
@@ -21,7 +21,7 @@ parameter int DATA_WIDTH = 32
 
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
-            instr_out <= 32;
+            instr_out <= 32'b0;
         end else begin
             instr_out <= instr_mem_data;
         end
